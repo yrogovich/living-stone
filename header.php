@@ -29,14 +29,14 @@
 		<div class="col-left">	
 			<navbar class="navbar">
 				<div class="navbar-top">
-					<div class="logo">
+					<a class="logo" href="#">
 						<div class="logo-icon">
 							<img src="<?php bloginfo("template_url"); ?>/src/img/logo.svg" alt="Живой камень">
 						</div>
 						<div class="logo-text">
 							Живой Камень
 						</div>
-					</div>
+					</a>
 
 					<svg class="ham hamRotate" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
 						<path
