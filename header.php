@@ -29,7 +29,7 @@
 		<div class="col-left">	
 			<navbar class="navbar">
 				<div class="navbar-top">
-					<a class="logo" href="#">
+					<a class="logo" href="<?php echo get_home_url( null, '' ); ?>">
 						<div class="logo-icon">
 							<img src="<?php bloginfo("template_url"); ?>/src/img/logo.svg" alt="Живой камень">
 						</div>
@@ -93,7 +93,7 @@
 
 		<div class="col-right">
 			<div class="right-navbar">
-				<a href="#" class="btn btn-inverse">заказать звонок</a>
+				<a href="#get-call" rel="modal:open" class="btn btn-inverse">заказать звонок</a>
 				<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
 			</div>
 

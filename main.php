@@ -155,7 +155,9 @@
         
         <div class="stone-types">
             <div class="stone-type">
-                <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/granite.jpg" alt="granite">
+                <div class="img-container">
+                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/granite.jpg" alt="granite">
+                </div>
                 <div class="content">
                     <h3 class="title">Гранит</h3>
                     <p>Включая различные традиционные серые / белые мраморы наряду с более драматическими мраморными оттенками, эквивалентный диапазон мраморной плитки невозможно найти в другом месте.</p>
@@ -163,7 +165,9 @@
             </div>
             <!-- stone-type -->
             <div class="stone-type">
-                <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/marble.jpg" alt="marble">
+                <div class="img-container">
+                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/marble.jpg" alt="marble">
+                </div>
                 <div class="content">
                     <h3 class="title">Мрамор</h3>
                     <p>Включая различные традиционные серые / белые мраморы наряду с более драматическими мраморными оттенками, эквивалентный диапазон мраморной плитки невозможно найти в другом месте.</p>
@@ -171,7 +175,9 @@
             </div>
             <!-- stone-type -->
             <div class="stone-type">
-                <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/onix.jpg" alt="onix">
+                <div class="img-container">
+                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/onix.jpg" alt="onix">
+                </div>
                 <div class="content">
                     <h3 class="title">Оникс</h3>
                     <p>Включая различные традиционные серые / белые мраморы наряду с более драматическими мраморными оттенками, эквивалентный диапазон мраморной плитки невозможно найти в другом месте.</p>
@@ -179,7 +185,9 @@
             </div>
             <!-- stone-type -->
             <div class="stone-type">
-                <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/travertine.jpg" alt="travertine">
+                <div class="img-container">
+                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/travertine.jpg" alt="travertine">
+                </div>
                 <div class="content">
                     <h3 class="title">Травертин</h3>
                     <p>Включая различные традиционные серые / белые мраморы наряду с более драматическими мраморными оттенками, эквивалентный диапазон мраморной плитки невозможно найти в другом месте.</p>
@@ -187,7 +195,9 @@
             </div>
             <!-- stone-type -->
             <div class="stone-type">
-                <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/quartzite.jpg" alt="quartzite">
+                <div class="img-container">
+                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/quartzite.jpg" alt="quartzite">
+                </div>
                 <div class="content">
                     <h3 class="title">Кварцит</h3>
                     <p>Включая различные традиционные серые / белые мраморы наряду с более драматическими мраморными оттенками, эквивалентный диапазон мраморной плитки невозможно найти в другом месте.</p>
@@ -195,7 +205,9 @@
             </div>
             <!-- stone-type -->
             <div class="stone-type">
-                <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/labradorite.jpg" alt="labradorite">
+                <div class="img-container">
+                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/stone-types/labradorite.jpg" alt="labradorite">
+                </div>
                 <div class="content">
                     <h3 class="title">Лабрадорит</h3>
                     <p>Включая различные традиционные серые / белые мраморы наряду с более драматическими мраморными оттенками, эквивалентный диапазон мраморной плитки невозможно найти в другом месте.</p>

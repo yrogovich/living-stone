@@ -4,6 +4,20 @@
      */
     $(function() {
 
+
+        $('.ham').click(function() {
+            $('.mobile-navbar').toggleClass('is-active');
+        });
+        $('.mobile-navbar a').click(function() {
+            $('.mobile-navbar').removeClass('is-active');
+            $('.ham').removeClass('active');
+        });
+
+        $("body").niceScroll({
+            scrollspeed: 60, // scrolling speed
+            mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
+        });  // let's do the magic! 
+
         // Lazyloading
         $('.lazy').lazy({
             // your configuration goes here
