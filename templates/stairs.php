@@ -1,7 +1,94 @@
 <?php
-    // Template name: Главная
+    // Template name: Лестницы
     get_header();
 ?>
+
+<header class="main-header stairs">
+	<div class="container">
+		<div class="row">
+		<div class="col-left">	
+			<navbar class="navbar">
+				<div class="navbar-top">
+					<a class="logo" href="<?php echo get_home_url( null, '' ); ?>">
+						<div class="logo-icon">
+							<img src="<?php bloginfo("template_url"); ?>/src/img/logo.svg" alt="Живой камень">
+						</div>
+						<div class="logo-text">
+							Живой Камень
+						</div>
+					</a>
+
+					<svg class="ham hamRotate" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+						<path
+								class="line top"
+								d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+						<path
+								class="line middle"
+								d="m 70,50 h -40" />
+						<path
+								class="line bottom"
+								d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+					</svg>
+
+					<?php wp_nav_menu( [
+							'menu'            => 'menu-top', 
+							'container'       => '', 
+							'menu_class'      => 'menu menu-top', 
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+						] ); ?>
+				</div>
+				<!-- /.navbar-top -->
+				<div class="navbar-bottom">
+					<?php wp_nav_menu( [
+							'menu'            => 'menu-bottom', 
+							'container'       => '', 
+							'menu_class'      => 'menu menu-bottom', 
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+						] ); ?>
+				</div>
+				<!-- /.navbar-bottom -->
+			</navbar>
+
+			<h1>Лестницы на заказ из натурального камня							
+с гарантией 30 лет							
+</h1>
+
+			<ul class="style-1">
+				<li>Работаем с 2001 года</li>
+				<li>Готовые решения от 29 000 руб.</li>
+				<li>Собственное производство</li>
+			</ul>
+
+			<a href="#" class="btn btn-primary">Рассчитать стоимость лестницы</a>
+		</div>
+		<!-- /.col-left -->
+
+		<div class="col-right">
+			<div class="right-navbar">
+				<a href="#get-call" rel="modal:open" class="btn btn-inverse">заказать звонок</a>
+				<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
+			</div>
+
+			
+		</div>
+		<!-- /.col-right -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+	
+	<img class="lazy bg-img" data-src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-stairs.jpg" alt="Лестница">
+</header>
 
 <section class="section gray" id="features">
     <div class="container">
@@ -44,64 +131,7 @@
     </div>
 </section>
 
-<section class="section shapes" id="video">
-    <div class="container">
-        <div class="sub-title">
-            <span>видеопрезентация</span>
-        </div>
-        <h2 class="h2">Главное о компании "Живой камень" - за 43 секунды</h2>
 
-        <div class="video-container">
-            <div class="youtube" data-embed="zxoMA2R4H0o">
-                <div id="play-video" class="video-play-button">
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</section>
-
-<section class="section gray" id="directions">
-    <div class="container">
-        <div class="sub-title">
-            <span>направления</span>
-        </div>
-        <h2 class="h2">Мы отлично делаем из камня:</h2>
-    </div>
-
-    <div class="directions-wrapper">
-        <div class="direction">
-            <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/directions/direction-1.jpg" alt="Лестницы" class="background">
-
-            <div class="content">
-                <h3 class="title">Лестницы</h3>
-                <a href="#" class="btn btn-primary">подробнее</a>
-            </div>
-        </div>
-        <!-- direction -->
-
-        <div class="direction">
-            <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/directions/direction-2.jpg" alt="Столешницы" class="background">
-
-            <div class="content">
-                <h3 class="title">Столешницы</h3>
-                <a href="#" class="btn btn-primary">подробнее</a>
-            </div>
-        </div>
-        <!-- direction -->
-
-        <div class="direction">
-            <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/directions/direction-3.jpg" alt="Подоконники" class="background">
-
-            <div class="content">
-                <h3 class="title">Подоконники</h3>
-                <a href="#" class="btn btn-primary">подробнее</a>
-            </div>
-        </div>
-        <!-- direction -->
-    </div>
-</section>
 
 <section id="portfolio" class="section">
     <div class="container">
@@ -137,10 +167,12 @@
             </a>
             <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-9.jpg">
 				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
-			</a>
+            </a>
+            
         </div>
-        <div class="text-center">
-            <a href="#" class="btn btn-primary">еще наши работы</a>
+        <div class="text-center space">
+            <a href="#" class="btn btn-primary">получить консультацию</a>
+            <a href="#" class="btn btn-outline">посмотреть еще наши работы</a>
         </div>
     </div>
 </section>
@@ -219,6 +251,24 @@
         <div class="text-center">
             <a href="#" class="btn btn-primary">Скачать весь каталог камней</a>
         </div>
+    </div>
+</section>
+
+<section class="section shapes" id="video">
+    <div class="container">
+        <div class="sub-title">
+            <span>видеопрезентация</span>
+        </div>
+        <h2 class="h2">Главное о компании "Живой камень" - за 43 секунды</h2>
+
+        <div class="video-container">
+            <div class="youtube" data-embed="zxoMA2R4H0o">
+                <div id="play-video" class="video-play-button">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </section>
 

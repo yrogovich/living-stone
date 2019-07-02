@@ -3,37 +3,15 @@
      * When DOM is ready
      */
     $(function() {
-
-
         $('.ham').click(function() {
             $('.mobile-navbar').toggleClass('is-active');
         });
         $('.mobile-navbar a').click(function() {
             $('.mobile-navbar').removeClass('is-active');
             $('.ham').removeClass('active');
-        });
+        });  
 
-        $("body").niceScroll({
-            scrollspeed: 60, // scrolling speed
-            mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
-        });  // let's do the magic! 
-
-        // Lazyloading
-        $('.lazy').lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            effectTime: 1200,
-            //threshold: 0,
-            visibleOnly: true,
-            onError: function(element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        });
-
-        //simple lightbox
-        var lightbox1 = $('.lighbox-1 a').simpleLightbox();
-
+        // ютубчик
         var youtube = document.querySelectorAll( ".youtube" );
         for (var i = 0; i < youtube.length; i++) {
             
@@ -53,6 +31,31 @@
                                 this.appendChild( iframe );
                     } );	
         };
+
+        $("body").niceScroll({
+            scrollspeed: 60, // scrolling speed
+            mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
+        });  // let's do the magic! 
+
+        // Lazyloading
+        $('.lazy').lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            effectTime: 1200,
+            //threshold: 0,
+            visibleOnly: true,
+            onError: function(element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        });
+
+        var mixer = mixitup('.job-container');
+
+        //simple lightbox
+        var lightbox1 = $('.lighbox-1 a').simpleLightbox();
+
+        
     });
 
 })(jQuery); // <----- jQuery no conflict wrapper

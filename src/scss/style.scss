@@ -172,6 +172,7 @@ ul.style-1 {
     font-weight: bold;
     outline: none!important;
     border: none;
+    text-align: center;
 
     &.btn-primary {
         font-size: 1.2rem;
@@ -191,6 +192,11 @@ ul.style-1 {
         &:active {
             background: #d8a337;
         }
+        &.btn-sm {
+            font-size: 1.2rem;
+            padding: 1.5rem;
+            
+        }
     }
     &.btn-inverse {
         font-size: 1rem;
@@ -206,9 +212,35 @@ ul.style-1 {
             filter: brightness(110%);
         }
     }
+    &.btn-outline {
+        font-size: 1.2rem;
+        color: $primary;
+        padding: 2rem 3rem;       
+        color: $primary;
+        border: 1px solid $primary;
+        border-color: $primary;
+        
+        min-width: 20rem;
+
+        transition: all .3s;
+        &:hover {
+            background: $btn-color;
+            color: $white
+        }
+        &:active {
+            background: #d8a337;
+        }
+    }
 }
 
 // Header
+.other-pages .row {
+    background-color: $white;
+}
+header .border-bottom {
+    border-bottom: 1px solid #c4c4c4;
+
+}
 .main-header {
     position: relative;
     min-height: 80rem;
@@ -368,6 +400,11 @@ ul.style-1 {
             font-size: .9rem;
             transition: color .2s;
         }
+        .current-menu-item {
+            a {
+                color: $primary;
+            }
+        }
     }
     &-bottom {
         justify-content: space-between;
@@ -426,9 +463,24 @@ ul.style-1 {
         width: 7.2rem;
         margin-left: 1rem;
     }
-
     &:hover {
         filter: saturate(180%);
+    }
+
+    &.big {
+        justify-content: center;
+
+        .logo-icon img{
+            width: 10rem;
+            height: auto;
+        }
+        .logo-text { 
+            margin-left: 1.8rem;
+            font-size: 2.4rem;
+            letter-spacing: 0.48rem;
+            width: 12.2rem;
+            text-align: left;
+        } 
     }
 }
 
@@ -594,9 +646,6 @@ ul.style-1 {
 
         margin-bottom: 3rem;
 
-        &:first-child .icon:before {
-            left: 2.2rem;
-        }
         .icon {
             position: relative;
             display: inline-block;
@@ -604,13 +653,21 @@ ul.style-1 {
 
             &:before {
                 position: absolute;
-                left: 1.9rem;
-                top: .5rem;
+                left: 1.4rem;
+                top: 0;
                 counter-increment: count;
                 content: "0" counter(count);
                 color: $white;
                 font-size: 2rem;
                 @include prata();
+                width: 3.6rem;
+                height: 3.6rem;
+                background-color: $gray;
+
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
             }
         }
         .title {
@@ -621,7 +678,7 @@ ul.style-1 {
         }
         p {
             color: $font-color-dark;
-            margin-bottom: 2rem;
+            margin-bottom: 2rem;          
         }
 
         @include sm(text-align, center);
@@ -632,6 +689,7 @@ ul.style-1 {
             .icon {
                 &:before {
                     color: $font-color;
+                    background-color: $white;
                 }
             }
             .title {
@@ -686,6 +744,27 @@ a.link {
 
 
 // Video
+.shapes {
+    position: relative;
+    &::before {
+        content: url('../img/decor-bg.svg');
+        position: absolute;
+        top: 15rem;
+        left: 0;
+    }
+    &::after {
+        content: url('../img/decor-bg.svg');
+        position: absolute;
+        bottom: 10rem;
+        right: 0;
+        transform: rotate(180deg);
+    }
+    &::before,
+    &::after {
+        @include sm(display, none);
+    }
+}
+
 #video {
     padding-bottom: 9rem;
 }
@@ -1145,4 +1224,128 @@ footer {
 }
 .blocker {
     z-index: 60;
+}
+
+.space {
+    .btn {
+        margin-right: 3rem; 
+    }
+}
+.other-pages {
+    min-height: unset;
+}
+
+
+// #OUR-job
+#our-job {
+    .row {
+        @include row-flex();
+
+        margin-top: 4rem;
+    }
+    .sidebar {
+        @include col();
+        @include size(2);
+        @include size-sm(3);
+        @include size-xs(12);
+
+        position: sticky;
+        top: 2rem;
+        height: fit-content;
+
+        .btn {
+            min-width: unset;
+        }
+        .title {
+            color: #898789;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .job-container {
+        @include col();
+        @include size(10);
+        @include size-sm(9);
+        @include size-xs(12);
+    }
+    ul{
+        margin-bottom: 2.2rem;
+        li {
+            text-transform: uppercase;
+            color: $font-color;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.24rem;
+            margin: 1.5rem 0;
+
+            cursor: pointer;
+            &.mixitup-control-active {
+                color: $primary;
+                
+                &:before {
+                    content: '';
+                    width: 1.5rem;
+                    height: .1rem;
+                    background-color: $primary;
+                    display: inline-block;
+                    align-items: center;
+                    margin-right: 1rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &.with-borders {
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+        }
+    }
+}
+
+// about-company
+#about-company {
+    text-align: center;
+    padding-bottom: 4rem;
+
+    .company-name {
+        @include prata();
+
+        color: $font-color;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .description {
+        color: $font-color-dark;
+    }
+}
+
+#company-digits {
+    padding-top: 5rem;
+    padding-bottom:4rem;
+    .row {
+        @include row-flex();
+
+        justify-content: center;
+        .digit {
+            @include col();
+            @include size(4);
+            @include size-sm(6);
+            @include size-xs(12);
+
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $font-color-dark;
+            img {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+#seo-text {
+    background-color: #fafafa;
+    padding: 10rem 0;
+    h2 {
+        text-align: left;
+    }
 }
