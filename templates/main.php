@@ -84,8 +84,19 @@
 		<!-- /.row -->
 	</div>
 	<!-- /.container -->
-	
-	<img class="lazy bg-img" data-src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image.jpg" alt="Живой камень 1">
+    
+    <!-- <div class="slider">
+	    <img class="lazy bg-img" data-src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-2.jpg" alt="Живой камень 2">
+        <img class="bg-img" src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-3.jpg" alt="Живой камень 3">
+        <img class="bg-img" src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-1.jpg" alt="Живой камень 1">
+    </div> -->
+
+        <div class="pic-wrapper">
+            <figure class="pic-1"></figure>
+            <figure class="pic-2"></figure>
+            <figure class="pic-3"></figure>
+        </div>
+    
 </header>
 
 <section class="section gray" id="features">
@@ -109,7 +120,7 @@
                 </div>
                 <h4 class="title">Профессиональное оборудование</h4>
                 <p>Профессиональное оборудование для гидроабразивной резки камня. Отрезные мостовые станки.</p>
-                <a href="#" class="link">Наше производство</a>
+                <a href="<?php echo get_home_url( null, 'nashe-proizvodstvo/' ); ?>" class="link">Наше производство</a>
             </div>
             <div class="feature">
                 <div class="icon">
@@ -161,7 +172,7 @@
 
             <div class="content">
                 <h3 class="title">Лестницы</h3>
-                <a href="#" class="btn btn-primary">подробнее</a>
+                <a href="<?php echo get_home_url( null, 'lestniczy/' ); ?>" class="btn btn-primary">подробнее</a>
             </div>
         </div>
         <!-- direction -->
@@ -171,7 +182,7 @@
 
             <div class="content">
                 <h3 class="title">Столешницы</h3>
-                <a href="#" class="btn btn-primary">подробнее</a>
+                <a href="<?php echo get_home_url( null, 'lestniczy/' ); ?>" class="btn btn-primary">подробнее</a>
             </div>
         </div>
         <!-- direction -->
@@ -181,7 +192,7 @@
 
             <div class="content">
                 <h3 class="title">Подоконники</h3>
-                <a href="#" class="btn btn-primary">подробнее</a>
+                <a href="<?php echo get_home_url( null, 'lestniczy/' ); ?>" class="btn btn-primary">подробнее</a>
             </div>
         </div>
         <!-- direction -->

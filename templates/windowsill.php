@@ -1,5 +1,5 @@
 <?php
-    // Template name: Лестницы
+    // Template name: Подоконники
     get_header();
 ?>
 
@@ -59,7 +59,7 @@
 				<!-- /.navbar-bottom -->
 			</navbar>
 
-			<h1>Лестницы на заказ из натурального камня							
+			<h1>Подоконники на заказ из натурального камня							
 с гарантией 30 лет							
 </h1>
 
@@ -69,7 +69,7 @@
 				<li>Собственное производство</li>
 			</ul>
 
-			<a href="#" class="btn btn-primary">Рассчитать стоимость лестницы</a>
+			<a href="#" class="btn btn-primary">Рассчитать стоимость подоконника</a>
 		</div>
 		<!-- /.col-left -->
 
@@ -87,7 +87,7 @@
 	</div>
 	<!-- /.container -->
 	
-	<img class="lazy bg-img" data-src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-1.jpg" alt="Лестница">
+	<img class="lazy bg-img" data-src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-3.jpg" alt="подоконника">
 </header>
 
 <section class="section gray" id="features">

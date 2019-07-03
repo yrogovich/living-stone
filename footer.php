@@ -66,7 +66,7 @@
 				</div>
 				<!-- col-1 -->
 				<div class="col-2">
-					<div class="title">Контакты</div>
+					<div class="title-gray">Контакты</div>
 
 					<a href="tel:+79032522860" class="with-icon i-phone">+7 903 252-28-60</a>
 					<a href="mailto:zakaz@alive-stone.ru" class="with-icon i-email">zakaz@alive-stone.ru</a>
@@ -82,7 +82,7 @@
 				</div>
 				<!-- /.col-2 -->
 				<div class="col-3">
-					<div class="title">Наша компания</div>
+					<div class="title-gray">Наша компания</div>
 
 					<?php wp_nav_menu( [
 								'menu'            => 'menu-top', 
@@ -98,7 +98,7 @@
 				</div>
 				<!-- /.col-3 -->
 				<div class="col-4">
-					<div class="title">Наши услуги</div>
+					<div class="title-gray">Наши услуги</div>
 
 					<?php wp_nav_menu( [
 								'menu'            => 'menu-bottom', 

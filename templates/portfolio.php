@@ -19,58 +19,58 @@
             </div>
             <div class="job-container gallery lighbox-1">
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-1.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
                 </a>
                 <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-2.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
                 </a>
                 <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-3.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
                 </a>
                 <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-4.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
                 </a>
                 <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-5.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
                 </a>
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-6.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
                 </a>
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-7.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
                 </a>
                 <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-8.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
                 </a>
                 <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-9.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
                 </a>
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-1.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
                 </a>
                 <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-2.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
                 </a>
                 <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-3.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
                 </a>
                 <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-4.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
                 </a>
                 <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-5.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
                 </a>
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-6.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
                 </a>
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-7.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
                 </a>
                 <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-8.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
                 </a>
                 <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-9.jpg">
-                    <img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
+                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
                 </a>
             </div>
         </div>

@@ -11,6 +11,7 @@
             $('.ham').removeClass('active');
         });  
 
+
         // ютубчик
         var youtube = document.querySelectorAll( ".youtube" );
         for (var i = 0; i < youtube.length; i++) {
