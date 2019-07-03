@@ -69,13 +69,13 @@
 				<li>Собственное производство</li>
 			</ul>
 
-			<a href="#" class="btn btn-primary">Рассчитать стоимость столешницы</a>
+			<a href="modal" class="btn btn-primary">Рассчитать стоимость столешницы</a>
 		</div>
 		<!-- /.col-left -->
 
 		<div class="col-right">
 			<div class="right-navbar">
-				<a href="#get-call" rel="modal:open" class="btn btn-inverse">заказать звонок</a>
+				<a href="modal" data-modal="get-call" class="btn btn-inverse">заказать звонок</a>
 				<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
 			</div>
 
@@ -111,7 +111,7 @@
                 </div>
                 <h4 class="title">Профессиональное оборудование</h4>
                 <p>Профессиональное оборудование для гидроабразивной резки камня. Отрезные мостовые станки.</p>
-                <a href="#" class="link">Наше производство</a>
+                <a href="<?php echo get_home_url( null, 'nashe-proizvodstvo/' ); ?>" class="link">Наше производство</a>
             </div>
             <div class="feature">
                 <div class="icon">
@@ -171,8 +171,8 @@
             
         </div>
         <div class="text-center space">
-            <a href="#" class="btn btn-primary">получить консультацию</a>
-            <a href="#" class="btn btn-outline">посмотреть еще наши работы</a>
+            <a href="modal"  data-modal="get-call" class="btn btn-primary">получить консультацию</a>
+            <a href="<?php echo get_home_url( null, 'nashi-raboty/' ); ?>" class="btn btn-outline">посмотреть еще наши работы</a>
         </div>
     </div>
 </section>
@@ -249,7 +249,7 @@
         </div>
 
         <div class="text-center">
-            <a href="#" class="btn btn-primary">Скачать весь каталог камней</a>
+            <a href="modal" data-modal="get-call" class="btn btn-primary">Скачать весь каталог камней</a>
         </div>
     </div>
 </section>
@@ -310,7 +310,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-primary">консультация специалиста</a>
+            <a href="modal" data-modal="get-call" class="btn btn-primary">консультация специалиста</a>
         </div>
     </div>
 </section>

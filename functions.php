@@ -131,7 +131,7 @@ function living_stone_scripts() {
 	wp_enqueue_script( 'living-simplelightbox', 'https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simple-lightbox.min.js', 'jquery', true );
 	wp_enqueue_script( 'living-jquery-modal', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js', 'jquery', true );
 	wp_enqueue_script( 'living-nicescroll', get_template_directory_uri() . '/src/js/jquery.nicescroll.min.js', 'jquery', true );
-	wp_enqueue_script( 'living-mixitup', 'https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js', 'jquery', true );
+	//wp_enqueue_script( 'living-mixitup', 'https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js', 'jquery', true );
 	wp_enqueue_script( 'living-stone-main', get_template_directory_uri() . '/src/js/main.js', 'jquery', true );
 	//wp_enqueue_script( 'living-stone-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	// wp_enqueue_script( 'living-stone-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

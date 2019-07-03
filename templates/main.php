@@ -67,13 +67,13 @@
 				<li>Собственное производство</li>
 			</ul>
 
-			<a href="#" class="btn btn-primary">Рассчитать стоимость</a>
+			<a href="modal" data-modal="get-call" class="btn btn-primary">Рассчитать стоимость</a>
 		</div>
 		<!-- /.col-left -->
 
 		<div class="col-right">
 			<div class="right-navbar">
-				<a href="#get-call" rel="modal:open" class="btn btn-inverse">заказать звонок</a>
+				<a href="modal" data-modal="get-call" class="btn btn-inverse">заказать звонок</a>
 				<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
 			</div>
 
@@ -84,12 +84,6 @@
 		<!-- /.row -->
 	</div>
 	<!-- /.container -->
-    
-    <!-- <div class="slider">
-	    <img class="lazy bg-img" data-src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-2.jpg" alt="Живой камень 2">
-        <img class="bg-img" src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-3.jpg" alt="Живой камень 3">
-        <img class="bg-img" src="<?php bloginfo("template_url"); ?>/src/img/main-page/slider-image-1.jpg" alt="Живой камень 1">
-    </div> -->
 
         <div class="pic-wrapper">
             <figure class="pic-1"></figure>
@@ -236,7 +230,7 @@
 			</a>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-primary">еще наши работы</a>
+            <a href="<?php echo get_home_url( null, 'nashi-raboty/' ); ?>" class="btn btn-primary">еще наши работы</a>
         </div>
     </div>
 </section>
@@ -313,7 +307,7 @@
         </div>
 
         <div class="text-center">
-            <a href="#" class="btn btn-primary">Скачать весь каталог камней</a>
+            <a href="modal"  data-modal="get-call" class="btn btn-primary">Скачать весь каталог камней</a>
         </div>
     </div>
 </section>
@@ -356,7 +350,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-primary">консультация специалиста</a>
+            <a href="modal"  data-modal="get-call" class="btn btn-primary">консультация специалиста</a>
         </div>
     </div>
 </section>

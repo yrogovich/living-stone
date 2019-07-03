@@ -37,7 +37,7 @@
                         <li>Моск. обл., г.Дубна, ул. Дружбы д.19</li>
                     </ol>
 
-                <a href="#" class="btn btn-inverse">Бесплатная консультация</a>
+                <a href="modal" data-modal="get-call" class="btn btn-inverse">Бесплатная консультация</a>
             </div>
             <!-- left -->
             <div class="right-side">

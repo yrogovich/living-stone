@@ -15,7 +15,7 @@
                     <li class="filter" data-filter=".category-2">Столешницы</li>
                     <li class="filter" data-filter=".category-3">Подоконники</li>
                 </ul>
-                <a href="#" class="btn btn-primary btn-sm">получить консультацию</a>
+                <a href="modal" data-modal="get-call" class="btn btn-primary btn-sm">получить консультацию</a>
             </div>
             <div class="job-container gallery lighbox-1">
                 <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-1.jpg">
@@ -117,5 +117,10 @@
         </div>
     </div>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<script>
+    var mixer = mixitup('.job-container');
+</script>
 
 <?php get_footer(); ?>

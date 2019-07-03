@@ -11,6 +11,14 @@
             $('.ham').removeClass('active');
         });  
 
+        $('[data-modal]').click(function(e) {
+            var modalName = $(this).data("modal");
+            $('#'+modalName).modal({
+                fadeDuration: 200
+            });
+            e.preventDefault();
+        });
+
 
         // ютубчик
         var youtube = document.querySelectorAll( ".youtube" );
@@ -50,8 +58,6 @@
                 console.log('error loading ' + element.data('src'));
             }
         });
-
-        var mixer = mixitup('.job-container');
 
         //simple lightbox
         var lightbox1 = $('.lighbox-1 a').simpleLightbox();

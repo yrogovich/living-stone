@@ -167,26 +167,38 @@ img {
   border-bottom: 1px solid #7B7B7B;
 }
 
-.h2 {
+.h2,
+h2 {
   color: #B6985A;
   font-size: 3.8rem;
   margin-bottom: 2.6rem;
 }
 
 @media screen and (max-width: 780px) {
-  .h2 {
+  .h2,
+  h2 {
     font-size: 2.8rem;
   }
 }
 
-.h2 .small {
+.h2 .small,
+h2 .small {
   font-size: 2rem;
 }
 
 @media screen and (max-width: 780px) {
-  .h2 .small {
+  .h2 .small,
+  h2 .small {
     font-size: 1.8rem;
   }
+}
+
+.article {
+  color: #615a4d;
+}
+
+.article p {
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -228,6 +240,10 @@ ul.style-1 li:before {
   outline: none !important;
   border: none;
   text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .btn.btn-primary {
@@ -1297,7 +1313,8 @@ a.link:hover:before {
   padding-bottom: 10rem;
 }
 
-.h3 {
+.h3,
+h3 {
   color: #B6985A;
   font-size: 2.8rem;
   margin-bottom: 1.4rem;
@@ -1658,12 +1675,13 @@ footer .menu {
 }
 
 .modal {
-  border-radius: 1rem;
+  border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-align: center;
   padding: 5rem 3rem;
   z-index: 60;
+  max-width: 440px;
 }
 
 .modal a.close-modal {
@@ -1688,10 +1706,31 @@ footer .menu {
   margin-bottom: 2rem;
   background-color: #ededed;
   padding: 1.5rem 3rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.modal .input-wrapper input:hover {
+  -webkit-box-shadow: 0 0 5px rgba(182, 152, 90, 0.2);
+          box-shadow: 0 0 5px rgba(182, 152, 90, 0.2);
+}
+
+.modal .input-wrapper input:focus {
+  border-color: #B6985A;
 }
 
 .modal .btn {
   min-width: 30rem;
+}
+
+@media screen and (max-width: 780px) {
+  .modal .btn {
+    min-width: 100%;
+  }
+}
+
+.modal p {
+  font-size: 1.6rem;
 }
 
 .blocker {
@@ -2443,5 +2482,9 @@ figurecaption {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+a[data-modal] {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

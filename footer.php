@@ -10,16 +10,18 @@
  */
 
 ?>
+
 <div class="section" id="pre-footer">
 	<div class="container">
 		<h3 class="h3">Подпишитесь на наши новости и акции</h3>
 		<p class="short-width">Вы будете одними из первых узнавать о новых коллекциях, получать промо-коды для участия в акциях и распродажах</p>
 
-		<form id="form-subscribe" action="javascript:" onsubmit="sendForm('#form-subscribe')">
+
+		<form id="form-subscribe" action="javascript:" onsubmit="call('#form-subscribe')">
 			<div class="input-wrapper">
-				<input type="email" name="user_email" id="" placeholder="Адрес электронной почты">
+				<input type="email" name="user_email" id="" placeholder="Адрес электронной почты" required>
 			</div>
-			<button class="btn btn-prefooter">Подписаться на акции</button>
+			<button class="btn btn-prefooter" type="submit">Подписаться на акции</button>
 		</form>
 
 		<div class="socials">
@@ -58,7 +60,7 @@
 					</a>
 
 					<p class="bold">ООО «Название компании»</p>
-					<a href="#" class="btn btn-inverse">Бесплатная консультация</a>
+					<a href="modal" data-modal="get-call" class="btn btn-inverse">Бесплатная консультация</a>
 
 
 					<a href="<?php echo get_home_url( null, 'privacy-policy/' ); ?>" class="link-2 privacy">Политика конфиденциальности</a>
@@ -156,16 +158,16 @@
 
 <!-- modal-call -->
 <div id="get-call" class="modal" >
-  <div class="h3">Заказать звонок</div>
+  <div class="h3">Оставьте свои контакты</div>
 
-  <form action="get-call-form" action="javascript:" onsubmit="call('#get-call-form')" method="POST">
+  <form id="get-call-form" action="javascript:" onsubmit="call('#get-call-form')" method="POST">
   	  <div class="input-wrapper">
 		  <input type="text" name="user_name" placeholder="Ваше имя" required>
 	  </div>
 	  <div class="input-wrapper">
 		  <input type="text" name="user_phone" placeholder="Ваш телефон" required>
 	  </div>
-	  <button class="btn btn-primary" type="submit">Заказать звонок</button>
+	  <button class="btn btn-primary" type="submit">Отправить</button>
   </form>
 </div>
 

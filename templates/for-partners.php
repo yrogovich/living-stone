@@ -98,7 +98,7 @@
         <!-- reasons -->
 
         <div class="text-center">
-            <a href="#" class="btn btn-primary">Запросить оптовый прайс-лист по изделиям</a>
+            <a href="modal" data-modal="get-call" class="btn btn-primary">Запросить оптовый прайс-лист по изделиям</a>
         </div>
     </div>
 </section>
@@ -113,8 +113,8 @@
 
         <div class="social-btns">
             <a href="tel:29032522860" class="social-btn i-phone"> 8 (903) 252-28-60</a>
-            <a href="#" class="social-btn i-whatsapp">Написать в WhatsApp</a>
-            <a href="#" class="social-btn i-telegram">Написать в Telegram</a>
+            <a href="modal" class="social-btn i-whatsapp">Написать в WhatsApp</a>
+            <a href="modal" class="social-btn i-telegram">Написать в Telegram</a>
 
         </div>
 
