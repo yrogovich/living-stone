@@ -67,7 +67,7 @@
 				<li>Собственное производство</li>
 			</ul>
 
-			<a href="modal" data-modal="get-call" class="btn btn-primary">Рассчитать стоимость</a>
+			<a href="modal" data-modal="get-calc" class="btn btn-primary">Рассчитать стоимость</a>
 		</div>
 		<!-- /.col-left -->
 

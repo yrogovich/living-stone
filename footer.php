@@ -158,22 +158,53 @@
 
 <!-- modal-call -->
 <div id="get-call" class="modal" >
-  <div class="h3">Оставьте свои контакты</div>
+  <div class="m-title">Свяжитесь с нами через удобный мессенджер или закажите звонок, заполнив форму</div>
+
+  <div class="m-social">
+	  <a href="#"><img src="<?php bloginfo("template_url"); ?>/src/img/social/whatsapp.svg" alt="whatsapp"></a>
+	  <a href="#"><img src="<?php bloginfo("template_url"); ?>/src/img/social/viber.svg" alt="viber"></a>
+	  <a href="#"><img src="<?php bloginfo("template_url"); ?>/src/img/social/telegram.svg" alt="telegram"></a>
+  </div>
 
   <form id="get-call-form" action="javascript:" onsubmit="call('#get-call-form')" method="POST">
-  	  <div class="input-wrapper">
-		  <input type="text" name="user_name" placeholder="Ваше имя" required>
-	  </div>
-	  <div class="input-wrapper">
-		  <input type="text" name="user_phone" placeholder="Ваш телефон" required>
-	  </div>
+	<div class="pair">
+		<div class="input-wrapper">
+			<input type="text" name="user_name" placeholder="Введите Ваше имя" required>
+		</div>
+		<div class="input-wrapper">
+			<input type="text" name="user_phone" placeholder="Введите Ваш телефон" required>
+		</div>
+	</div>
+  	 
 	  <button class="btn btn-primary" type="submit">Отправить</button>
   </form>
+
+  <div class="privacy-text">Нажимая на кнопку “Отправить”, Вы принимаете условия <a href="<?php echo get_home_url( null, 'privacy-policy/' ); ?>" class="">Политики конфиденциальности</a></div>
+</div>
+<!-- modal-calc -->
+<div id="get-calc" class="modal" >
+  <div class="m-title">Закажите расчет стоимости наших работ</div>
+  <p>Оставьте свои контактные данные, и мы свяжемся с вами в ближайшее время</p>
+
+  <form id="get-calc-form" action="javascript:" onsubmit="call('#get-calc-form')" method="POST">
+	<div class="pair">
+		<div class="input-wrapper">
+			<input type="text" name="user_name" placeholder="Введите Ваше имя" required>
+		</div>
+		<div class="input-wrapper">
+			<input type="text" name="user_phone" placeholder="Введите Ваш телефон" required>
+		</div>
+	</div>
+  	 
+	  <button class="btn btn-primary" type="submit">Отправить</button>
+  </form>
+
+  <div class="privacy-text">Нажимая на кнопку “Отправить”, Вы принимаете условия <a href="<?php echo get_home_url( null, 'privacy-policy/' ); ?>" class="">Политики конфиденциальности</a></div>
 </div>
 
 <!-- madal-thx -->
 <div id="thx-modal" class="modal" >
-  <div class="h3">Спасибо за заявку!</div>
+	<div class="m-title">Спасибо за заявку!</div>
   <p style="margin-bottom: 5rem;">Наши специалисты свяжутся с вами в ближайшее время.</p>
   
 

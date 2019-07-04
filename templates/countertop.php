@@ -69,7 +69,7 @@
 				<li>Собственное производство</li>
 			</ul>
 
-			<a href="modal" class="btn btn-primary">Рассчитать стоимость столешницы</a>
+			<a href="modal" data-modal="get-calc" class="btn btn-primary">Рассчитать стоимость столешницы</a>
 		</div>
 		<!-- /.col-left -->
 

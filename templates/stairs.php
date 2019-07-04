@@ -75,7 +75,7 @@
 
 		<div class="col-right">
 			<div class="right-navbar">
-				<a href="modal" data-modal="get-call" class="btn btn-inverse">заказать звонок</a>
+				<a href="modal" data-modal="get-calc" class="btn btn-inverse">заказать звонок</a>
 				<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
 			</div>
 
