@@ -117,7 +117,6 @@
             <a href="modal" class="social-btn i-telegram">Написать в Telegram</a>
 
         </div>
-
     </div>
 </section>
 

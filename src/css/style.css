@@ -1330,6 +1330,7 @@ h3 {
   background: #3a383c url("../img/pre-footer.jpg") center/cover no-repeat;
   text-align: center;
   color: #fff;
+  border-bottom: 0.5rem solid #B6985A;
 }
 
 #pre-footer form {
@@ -1435,7 +1436,6 @@ h3 {
 }
 
 footer {
-  border-top: 0.5rem solid #B6985A;
   padding-top: 4.5rem;
   padding-bottom: 5rem;
   background-color: #3a383c;
@@ -2486,5 +2486,30 @@ figurecaption {
 
 a[data-modal] {
   cursor: pointer;
+}
+
+#page {
+  min-height: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#colophon {
+  padding: 25px 0;
+  font-size: 85%;
+  background-color: #2A2A2A;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#ascrail2000 {
+  z-index: 10 !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -119,7 +119,7 @@
 			<!-- row -->
 		</div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
 
 <!-- Mobile navbar -->
 <div class="mobile-navbar">
