@@ -141,32 +141,32 @@
         <h2 class="h2">Наши работы</h2>
 
         <div class="gallery lighbox-1">
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-1.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-001.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-001.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-2.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-002.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-002.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-3.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-003.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-003.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-4.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-004.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-004.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-5.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-005.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-005.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-6.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-006.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-006.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-7.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-007.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-007.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-8.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-008.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-008.jpg" alt="item">
             </a>
-            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-9.jpg">
-				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
+            <a class="item" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-009.jpg">
+				<img class="lazy" data-src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-009.jpg" alt="item">
             </a>
             
         </div>
@@ -249,7 +249,7 @@
         </div>
 
         <div class="text-center">
-            <a href="modal" data-modal="get-call" class="btn btn-primary">Скачать весь каталог камней</a>
+            <a href="<?php bloginfo("template_url"); ?>/src/pdf/catalog.pdf" target="_blank" class="btn btn-primary">Скачать весь каталог камней</a>
         </div>
     </div>
 </section>

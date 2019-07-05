@@ -98,7 +98,7 @@
         <!-- reasons -->
 
         <div class="text-center">
-            <a href="modal" data-modal="get-call" class="btn btn-primary">Запросить оптовый прайс-лист по изделиям</a>
+            <a href="modal" data-modal="get-price-list" class="btn btn-primary">Запросить оптовый прайс-лист по изделиям</a>
         </div>
     </div>
 </section>

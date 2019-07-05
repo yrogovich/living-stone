@@ -44,6 +44,41 @@
 	</div>
 </div>
 
+<!-- Mobile navbar -->
+<div class="mobile-navbar">
+	<div class="container">
+		<div class="content">
+			<?php wp_nav_menu( [
+				'menu'            => 'menu-top', 
+				'container'       => '', 
+				'menu_class'      => 'menu menu-top-mobile', 
+				'before'          => '',
+				'after'           => '',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'depth'           => 0,
+			] ); ?>
+
+			<?php wp_nav_menu( [
+				'menu'            => 'menu-bottom', 
+				'container'       => '', 
+				'menu_class'      => 'menu menu-bottom-mobile', 
+				'before'          => '',
+				'after'           => '',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'depth'           => 0,
+			] ); ?>
+		</div>
+		<div class="footer">
+			<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
+		</div>
+	</div>
+</div>
+<!-- mob-nav -->
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
@@ -121,40 +156,7 @@
 	</footer><!-- #colophon -->
 
 
-<!-- Mobile navbar -->
-<div class="mobile-navbar">
-	<div class="container">
-		<div class="content">
-			<?php wp_nav_menu( [
-				'menu'            => 'menu-top', 
-				'container'       => '', 
-				'menu_class'      => 'menu menu-top-mobile', 
-				'before'          => '',
-				'after'           => '',
-				'link_before'     => '',
-				'link_after'      => '',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				'depth'           => 0,
-			] ); ?>
 
-			<?php wp_nav_menu( [
-				'menu'            => 'menu-bottom', 
-				'container'       => '', 
-				'menu_class'      => 'menu menu-bottom-mobile', 
-				'before'          => '',
-				'after'           => '',
-				'link_before'     => '',
-				'link_after'      => '',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				'depth'           => 0,
-			] ); ?>
-		</div>
-		<div class="footer">
-			<a href="tel:79032522860" class="phone i-phone">+7 903 252-28-60</a>
-		</div>
-	</div>
-</div>
-<!-- mob-nav -->
 
 <!-- modal-call -->
 <div id="get-call" class="modal" >
@@ -201,13 +203,33 @@
 
   <div class="privacy-text">Нажимая на кнопку “Отправить”, Вы принимаете условия <a href="<?php echo get_home_url( null, 'privacy-policy/' ); ?>" class="">Политики конфиденциальности</a></div>
 </div>
+<!-- modal-calc -->
+<div id="get-price-list" class="modal" >
+  <div class="m-title">Оставьте свои контактные данные, чтобы получить оптовый прайс-лист</div>
+
+  <form id="get-price-list-form" action="javascript:" onsubmit="call('#get-price-list-form')" method="POST">
+
+	<div class="input-wrapper">
+		<input type="text" name="user_name" placeholder="Введите Ваше имя" required>
+	</div>
+	<div class="input-wrapper">
+		<input type="text" name="user_phone" placeholder="Введите Ваш телефон" required>
+	</div>
+	<div class="input-wrapper">
+		<input type="text" name="user_email" placeholder="Введите Ваш Email" required>
+	</div>
+  	 
+	  <button class="btn btn-primary" type="submit">Запросить прайс-лист</button>
+  </form>
+
+  <div class="privacy-text">Нажимая на кнопку “Отправить”, Вы принимаете условия <a href="<?php echo get_home_url( null, 'privacy-policy/' ); ?>" class="">Политики конфиденциальности</a></div>
+</div>
+
 
 <!-- madal-thx -->
 <div id="thx-modal" class="modal" >
 	<div class="m-title">Спасибо за заявку!</div>
   <p style="margin-bottom: 5rem;">Наши специалисты свяжутся с вами в ближайшее время.</p>
-  
-
   <a href="#" rel="modal:close" class="btn btn-primary">Закрыть</a>
 </div>
 

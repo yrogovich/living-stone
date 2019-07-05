@@ -11,67 +11,29 @@
                 <div class="title">Отображать:</div>
                 <ul class="with-borders">
                     <li class="filter" data-filter="all">Все изделия</li>
-                    <li class="filter" data-filter=".category-1">Лестницы</li>
-                    <li class="filter" data-filter=".category-2">Столешницы</li>
-                    <li class="filter" data-filter=".category-3">Подоконники</li>
+                    <li class="filter" data-filter=".category-stairs">Лестницы</li>
+                    <li class="filter" data-filter=".category-tabletop">Столешницы</li>
+                    <li class="filter" data-filter=".category-windowsill">Подоконники</li>
                 </ul>
                 <a href="modal" data-modal="get-call" class="btn btn-primary btn-sm">получить консультацию</a>
             </div>
             <div class="job-container gallery lighbox-1">
-                <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-1.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
-                </a>
-                <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-2.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
-                </a>
-                <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-3.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
-                </a>
-                <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-4.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
-                </a>
-                <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-5.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
-                </a>
-                <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-6.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
-                </a>
-                <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-7.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
-                </a>
-                <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-8.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
-                </a>
-                <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-9.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
-                </a>
-                <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-1.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-1.jpg" alt="item">
-                </a>
-                <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-2.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-2.jpg" alt="item">
-                </a>
-                <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-3.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-3.jpg" alt="item">
-                </a>
-                <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-4.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-4.jpg" alt="item">
-                </a>
-                <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-5.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-5.jpg" alt="item">
-                </a>
-                <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-6.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-6.jpg" alt="item">
-                </a>
-                <a class="item mix category-1" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-7.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-7.jpg" alt="item">
-                </a>
-                <a class="item mix category-3" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-8.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-8.jpg" alt="item">
-                </a>
-                <a class="item mix category-2" href="<?php bloginfo("template_url"); ?>/src/img/main-gallery/job-9.jpg">
-                    <img src="<?php bloginfo("template_url"); ?>/src/img/main-gallery/thumbs/job-9.jpg" alt="item">
-                </a>
+                <?php for ($i=1; $i <= 8; $i++) { ?>
+                    <a class="item mix category-windowsill" href="<?php bloginfo("template_url"); ?>/src/img/gallery/windowsill/podokonniki-iz-kamnya-0<?php printf("%02d", $i) ?>.jpg">
+                        <img src="<?php bloginfo("template_url"); ?>/src/img/gallery/windowsill/thumbs/podokonniki-iz-kamnya-0<?php printf("%02d", $i) ?>.jpg" alt="item">
+                    </a>
+                <?php } ?>
+                <?php for ($i=1; $i <= 11; $i++) { ?>
+                    <a class="item mix category-tabletop" href="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/stoleshnicy-iz-kamnya-0<?php printf("%02d", $i) ?>.jpg">
+                        <img src="<?php bloginfo("template_url"); ?>/src/img/gallery/tabletop/thumbs/stoleshnicy-iz-kamnya-0<?php printf("%02d", $i) ?>.jpg" alt="item">
+                    </a>
+                <?php } ?>
+                <?php for ($i=1; $i <= 10; $i++) { ?>
+                    <a class="item mix category-stairs" href="<?php bloginfo("template_url"); ?>/src/img/gallery/stairs/lestnicy-iz-kamnya-0<?php printf("%02d", $i) ?>.jpg">
+                        <img src="<?php bloginfo("template_url"); ?>/src/img/gallery/stairs/thumbs/lestnicy-iz-kamnya-0<?php printf("%02d", $i) ?>.jpg" alt="item">
+                    </a>
+                <?php } ?>
+                
             </div>
         </div>
     </div>

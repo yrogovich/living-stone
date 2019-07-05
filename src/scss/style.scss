@@ -68,7 +68,8 @@ body {
     @include open-sans();
     font-size: 1.4rem;
     margin: 0;
-    overflow: hidden!important;
+    //overflow: hidden!important;
+    overflow-y: scroll!important; 
 }
 
 ul {
@@ -900,6 +901,7 @@ a.link {
 
 // gallery
 #portfolio {
+    padding-bottom: 5.5rem;
     .h2 {
         margin-bottom: 3.8rem;
     }
@@ -1253,6 +1255,10 @@ footer {
         padding: 7rem 9.5rem;
     }
     @include xs(padding, 6rem 4rem);
+
+    @media (max-height: 650px) {
+        padding: 3rem 4rem;
+    }
     a.close-modal {
         top: 10px;
         right: 10px;
@@ -1265,16 +1271,29 @@ footer {
         text-align: center;
         color: #615A4D;
         margin-bottom: 1rem;
+        @media (max-width: 365px) {
+            font-size: 1.7rem;
+        }
     }
 
     .m-social {
+        display: flex;
+        justify-content: center;
         margin-top: 2.5rem;
+        
         a {
             margin: 2.5rem;
+            
             img {
                 width: 4rem;
                 height: 4rem;
                 object-fit: contain;
+            }
+        }
+        @media (max-width: 380px) {
+            justify-content: space-between;
+            a {
+            margin: 0.5rem;
             }
         }
     }
@@ -1292,9 +1311,14 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .pair {
+        .input-wrapper {
+            width: 25rem;
+        }
+    }
     .input-wrapper {
         border-radius: 1rem;
-        width: 25rem;
+        
         max-width: 100%;
         margin: auto;
         @include sm(width, 100%);
@@ -1340,7 +1364,7 @@ footer {
 
 .space {
     .btn {
-        margin-right: 3rem; 
+        margin: 0 1.5rem 2rem 1.5rem;
     }
 }
 .other-pages {
@@ -1364,6 +1388,11 @@ footer {
         position: sticky;
         top: 2rem;
         height: fit-content;
+        margin-bottom: 2rem;
+        @include xs-block() {
+            top: -2rem;
+            position: relative;
+        }
 
         .btn {
             min-width: unset;
@@ -1689,22 +1718,22 @@ ol {
         @include size-md(6);
         @include size-sm(12);
 
-        height: 9rem;
+        height: 8rem;
         font-size: 2rem;
 
         text-transform: uppercase;
-        letter-spacing: 0.4rem;
         border: 1px solid;
         border-radius: 1rem;
 
         display: flex;
         align-items: center;
         overflow: hidden;
-        padding-right: 1rem;
+        padding-right: 2rem;
         font-weight: 700;
         transition: .3s;
 
         margin-bottom: 2rem;
+        width: auto;
 
         &:before {
             display: inline-flex;
@@ -1848,33 +1877,4 @@ figurecaption {
 
 a[data-modal]{
     cursor: pointer;
-}
-
-#page {
-	min-height: 100%;
-	min-height: 100vh;
-	position: relative;
-    z-index: 1;
-    
-    background-color: $white;
-
-	box-shadow: 0 7px 20px 0 rgba(0, 0, 0, .5);
-  
-}
-
-#colophon {
-    padding: 25px 0;
-    //padding: 50px 0;
-	font-size: 85%;
-	background-color: #2A2A2A;
-	position: fixed;
-	z-index: -1;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
-//scroll 
-#ascrail2000 {
-    z-index: 10!important;
 }

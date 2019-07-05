@@ -60,7 +60,7 @@
     </div>
 </section>
 
-<section class="" id="seo-text">
+<!-- <section class="" id="seo-text">
     <div class="container">
         <h2 class="h2">СЕО текст о компании</h2>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -69,7 +69,7 @@
             <p>Пока его тут нету</p>
         <?php endif; ?>
     </div>
-</section>
+</section> -->
 
 <section class="section" id="features">
     <div class="container">
